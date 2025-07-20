@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/widget/custom_search_icon.dart';
-import 'package:note_app/widget/note_view_body.dart';
+import 'package:note_app/widget/notes_list_view.dart';
 
 class NoteView extends StatelessWidget {
   const NoteView({super.key});
@@ -15,7 +15,7 @@ class NoteView extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontSize: 30),
         ),
       ),
-      body: NoteViewBody(),
+      body: NotesListViewBuilder(),
     );
   }
 }

@@ -1,13 +1,11 @@
-
 import 'package:flutter/material.dart';
 
-class NoteViewBody extends StatelessWidget {
-  const NoteViewBody({super.key});
+class NoteItem extends StatelessWidget {
+  const NoteItem({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 230,
       margin: EdgeInsets.all(16),
       padding: EdgeInsets.only(left: 24, top: 24, bottom: 24),
       decoration: BoxDecoration(
@@ -27,7 +25,7 @@ class NoteViewBody extends StatelessWidget {
               icon: Icon(Icons.delete, size: 40, color: Colors.black),
             ),
             subtitle: Padding(
-              padding: const EdgeInsets.only(top: 32),
+              padding: const EdgeInsets.only(top: 24),
               child: Text(
                 'Build My career with Mahmoud Dahy',
                 style: TextStyle(color: Colors.black54, fontSize: 19),
