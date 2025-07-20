@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/widget/custom_search_icon.dart';
 
 class NoteView extends StatelessWidget {
   const NoteView({super.key});
@@ -7,15 +8,7 @@ class NoteView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0),
-            child: IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.search, size: 30),
-            ),
-          ),
-        ],
+        actions: [CustomSearchIcon()],
         title: Text(
           'Notes',
           style: TextStyle(color: Colors.white, fontSize: 30),
