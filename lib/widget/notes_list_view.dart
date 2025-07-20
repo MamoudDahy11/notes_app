@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:note_app/widget/note_item.dart';
 
@@ -8,10 +7,10 @@ class NotesListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        itemCount: 2,
-        itemBuilder: (context, index) {
-          return NoteItem();
-        },
-      );
+      // itemCount: 2,
+      itemBuilder: (context, index) {
+        return NoteItem();
+      },
+    );
   }
 }
