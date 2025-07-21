@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/constant.dart';
 import 'package:note_app/widget/custom_bottom.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
@@ -16,7 +17,7 @@ class AddNoteBottomSheet extends StatelessWidget {
               // maintainHintHeight: false,
               hintText: 'Title',
               hintStyle: TextStyle(
-                color: Color(0XFF71FFE6),
+                color: kPrimaryColor,
                 fontSize: 16, // Optional: customize font size
               ),
               border: OutlineInputBorder(
@@ -33,7 +34,7 @@ class AddNoteBottomSheet extends StatelessWidget {
               contentPadding: EdgeInsets.only(top: 60, bottom: 60, left: 16),
               hintText: 'Content',
               hintStyle: TextStyle(
-                color: Color(0XFF71FFE6),
+                color: kPrimaryColor,
                 fontSize: 16, // Optional: customize font size
               ),
               border: OutlineInputBorder(
