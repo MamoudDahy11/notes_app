@@ -5,8 +5,6 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // Initialize Hive
   await Hive.initFlutter();
   await Hive.openBox(kNotesBox);
   return runApp(NotesApp());
