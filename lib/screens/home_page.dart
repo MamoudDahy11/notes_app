@@ -21,7 +21,7 @@ class NoteView extends StatelessWidget {
         child: Icon(Icons.add),
       ),
       appBar: AppBar(
-        actions: const [CustomSearchIcon()],
+        actions: [CustomSearchIcon(icon: Icon(Icons.delete, size: 30))],
         title: Text(
           'Notes',
           style: TextStyle(color: Colors.white, fontSize: 30),
