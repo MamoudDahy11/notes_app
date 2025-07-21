@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/constant.dart';
 
+// ignore: must_be_immutable
 class CustomBotton extends StatelessWidget {
   CustomBotton({super.key, required this.text, this.onTap});
   final String text;
@@ -20,11 +21,7 @@ class CustomBotton extends StatelessWidget {
           child: Center(
             child: Text(
               text,
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 24,
-                fontFamily: 'Pacifico',
-              ),
+              style: TextStyle(color: Colors.black, fontSize: 24),
             ),
           ),
         ),

@@ -23,7 +23,7 @@ class EditNote extends StatelessWidget {
           CustomTextField(text: 'Title'),
           CustomTextField(text: 'Content', maxLine: 5),
           SizedBox(height: 50),
-          CustomBotton(text: 'Add'),
+          CustomBotton(text: 'Edit'),
           SizedBox(height: 50),
         ],
       ),
