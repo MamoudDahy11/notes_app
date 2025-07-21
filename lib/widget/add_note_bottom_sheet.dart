@@ -8,14 +8,17 @@ class AddNoteBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(height: 15),
-        CustomTextField(text: 'Title'),
-        CustomTextField(text: 'Content', maxLine: 5),
-        SizedBox(height: 80),
-        CustomBotton(text: 'Add'),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(height: 15),
+          CustomTextField(text: 'Title'),
+          CustomTextField(text: 'Content', maxLine: 5),
+          SizedBox(height: 80),
+          CustomBotton(text: 'Add'),
+          SizedBox(height: 50),
+        ],
+      ),
     );
   }
 }
