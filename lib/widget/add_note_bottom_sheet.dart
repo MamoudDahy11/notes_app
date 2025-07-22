@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:note_app/widget/custom_bottom.dart';
 import 'package:note_app/widget/custom_text_field.dart';
@@ -48,7 +46,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           const SizedBox(height: 80),
           CustomBotton(
             text: 'Add',
-            onTap: () { 
+            onTap: () {
               if (formKey.currentState!.validate()) {
                 formKey.currentState!.save();
               } else {
@@ -62,4 +60,3 @@ class _AddNoteFormState extends State<AddNoteForm> {
     );
   }
 }
-
