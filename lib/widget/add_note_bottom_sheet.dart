@@ -48,7 +48,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           const SizedBox(height: 80),
           CustomBotton(
             text: 'Add',
-            onTap: () {
+            onTap: () { 
               if (formKey.currentState!.validate()) {
                 formKey.currentState!.save();
               } else {
