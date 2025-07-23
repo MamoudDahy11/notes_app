@@ -11,7 +11,6 @@ class NoteView extends StatefulWidget {
 }
 
 class _NoteViewState extends State<NoteView> {
-  
   // @override
   // void initState() {
   //   BlocProvider.of<NotesCubit>(context).fetchAlllNotes();
@@ -34,7 +33,7 @@ class _NoteViewState extends State<NoteView> {
         child: Icon(Icons.add),
       ),
       appBar: AppBar(
-        actions: [CustomSearchIcon(icon: Icon(Icons.delete, size: 30))],
+        actions: [CustomSearchIcon(icon: Icon(Icons.search, size: 30))],
         title: Text(
           'Notes',
           style: TextStyle(color: Colors.white, fontSize: 30),

@@ -18,9 +18,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
   final GlobalKey<FormState> formKey = GlobalKey();
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   String? title, subTitle;
-  String formattedDate = DateFormat(
-    'dd/MM/yyyy hh:mm a',
-  ).format(DateTime.now());
+  String formattedDate = DateFormat('dd-MM-yyyy').format(DateTime.now());
 
   @override
   Widget build(BuildContext context) {
