@@ -5,15 +5,25 @@ import 'package:note_app/widget/add_note_bottom_sheet.dart';
 import 'package:note_app/widget/custom_search_icon.dart';
 import 'package:note_app/widget/notes_list_view.dart';
 
-class NoteView extends StatelessWidget {
+class NoteView extends StatefulWidget {
   const NoteView({super.key});
+
+  @override
+  State<NoteView> createState() => _NoteViewState();
+}
+
+class _NoteViewState extends State<NoteView> {
+  @override
+  void initState() {
+    BlocProvider.of<NotesCubit>(context).fetchAlllNotes();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => NotesCubit(),
       child: Scaffold(
-        
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             showModalBottomSheet(

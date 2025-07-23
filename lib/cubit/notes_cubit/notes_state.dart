@@ -4,16 +4,4 @@ abstract class NoteState {}
 
 class NoteInitial extends NoteState {}
 
-class NoteLoading extends NoteState {}
 
-class NoteSuccess extends NoteState {
-  final List<NoteModel> notes;
-
-  NoteSuccess(this.notes);
-}
-
-class NoteFailure extends NoteState {
-  final String errorMessage;
-
-  NoteFailure(this.errorMessage);
-}
