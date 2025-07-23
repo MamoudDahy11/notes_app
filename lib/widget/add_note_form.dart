@@ -37,7 +37,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               subTitle = value;
             },
           ),
-          const SizedBox(height: 80),
+          const SizedBox(height: 50),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
               return CustomBotton(
@@ -60,7 +60,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               );
             },
           ),
-          const SizedBox(height: 50),
+          const SizedBox(height: 30),
         ],
       ),
     );
