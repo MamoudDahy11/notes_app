@@ -3,9 +3,15 @@ import 'package:note_app/constant.dart';
 
 // ignore: must_be_immutable
 class CustomBotton extends StatelessWidget {
-  CustomBotton({super.key, required this.text, this.onTap});
+  CustomBotton({
+    super.key,
+    required this.text,
+    this.onTap,
+    this.isLOading = false,
+  });
   final String text;
   VoidCallback? onTap;
+  bool isLOading;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,10 +25,12 @@ class CustomBotton extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
           ),
           child: Center(
-            child: Text(
-              text,
-              style: TextStyle(color: Colors.black, fontSize: 24),
-            ),
+            child: isLOading
+                ? CircularProgressIndicator(color: Colors.black)
+                : Text(
+                    text,
+                    style: TextStyle(color: Colors.black, fontSize: 24),
+                  ),
           ),
         ),
       ),
