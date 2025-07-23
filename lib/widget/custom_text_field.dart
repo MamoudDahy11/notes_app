@@ -21,7 +21,7 @@ class CustomTextField extends StatelessWidget {
           if (value?.isEmpty ?? true) {
             return 'Field is required';
           } else {
-            print(value);
+            debugPrint(value);
             return null;
           }
         },
