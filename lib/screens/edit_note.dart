@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note_app/cubit/notes_cubit/notes_cubit.dart';
 import 'package:note_app/models/note_model.dart';
 import 'package:note_app/widget/custom_bottom.dart';
-import 'package:note_app/widget/custom_search_icon.dart';
+
 import 'package:note_app/widget/custom_text_field.dart';
 
 class EditNote extends StatefulWidget {
@@ -22,7 +22,8 @@ class _EditNoteState extends State<EditNote> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        actions: const [CustomSearchIcon(icon: Icon(Icons.check))],
+        // actions: const [CustomSearchIcon(icon: Icon(Icons.check))],
+        centerTitle: true,
         title: const Text(
           'Edit Note',
           style: TextStyle(color: Colors.white, fontSize: 30),

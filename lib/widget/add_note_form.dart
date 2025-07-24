@@ -57,11 +57,13 @@ class _AddNoteFormState extends State<AddNoteForm> {
                       title: title!,
                       subTitle: subTitle!,
                       date: formattedDate,
+                      // ignore: deprecated_member_use
                       color: Colors.amber.value,
                     );
                     await BlocProvider.of<AddNoteCubit>(
                       context,
                     ).addNote(noteModel);
+                    // ignore: use_build_context_synchronously
                     BlocProvider.of<NotesCubit>(context).fetchAlllNotes();
                     setState(() {});
                     // Navigator.pop(context);

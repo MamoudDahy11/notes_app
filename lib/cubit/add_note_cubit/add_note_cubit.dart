@@ -11,6 +11,7 @@ class AddNoteCubit extends Cubit<AddNoteState> {
 
   Color color = const Color(0XFF0B2027);
   Future<void> addNote(NoteModel note) async {
+    // ignore: deprecated_member_use
     note.color = color.value;
     emit(AddNoteLoading());
     try {
