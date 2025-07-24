@@ -42,6 +42,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               subTitle = value;
             },
           ),
+          SizedBox(height: 35),
           ListViewItem(),
           const SizedBox(height: 50),
           BlocBuilder<AddNoteCubit, AddNoteState>(
